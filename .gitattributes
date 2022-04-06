@@ -1,0 +1,4 @@
+cd filter=lfs diff=lfs merge=lfs -text
+/Users/luis/Documents/Pythonn[[:space:]]Projects/Venvironment_tests/venvironment_test02_d/medpreds07/model111_22Mar.h5 filter=lfs diff=lfs merge=lfs -text
+/Users/luis/Documents/Pythonn[[:space:]]Projects/Venvironment_tests/venvironment_test02_d/medpreds07/my_model_25Mar.h5 filter=lfs diff=lfs merge=lfs -text
+/Users/luis/Documents/Pythonn[[:space:]]Projects/Venvironment_tests/venvironment_test02_d/medpreds07/medpreds06/README.md filter=lfs diff=lfs merge=lfs -text
