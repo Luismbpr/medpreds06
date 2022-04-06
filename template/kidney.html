@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+	<title>kidney_pred</title>
+
+</head>
+	<style>
+    #main-footer
+    {
+      color: #FFFFFF;
+      font-family: "Segoe UI";
+      background: #2B2B2B;
+      text-align: center;
+      margin-top: 1px;
+      padding: 16px;
+      bottom: 8px;
+    }</style>
+
+<body>
+    <header class="site-header">
+  <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+    <div class="container">
+      <a class="navbar-brand mr-4" href="/">ML Medical Prediction App</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <div class="navbar-nav mr-auto">
+					<a class="nav-item nav-link" href="/">Home</a>
+					<a class="nav-item nav-link" href="/about">About</a>
+					<a class="nav-item nav-link" href="/cancer">Cancer</a>
+					<a class="nav-item nav-link" href="/diabetes">Diabetes</a>
+					<a class="nav-item nav-link" href="/heart">Heart</a>
+					<a class="nav-item nav-link" href="/liver">Liver</a>
+					<a class="nav-item nav-link" href="/kidney">Kidney</a>
+					<a class="nav-item nav-link" href="/Malaria">Malaria</a>
+					<a class="nav-item nav-link" href="/Pneumonia">Pneumonia</a>
+        </div>
+        <!-- Navbar Right Side  This goes up <a class="nav-item nav-link" href="/Pneumonia">Pneumonia</a>
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/login">Login</a>
+          <a class="nav-item nav-link" href="/register">Register</a>
+        </div>-->
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- 18 Feb Start-->
+<!-- Note: Added This to align all the input text boxes -->
+<style type="text/css">
+	label {
+		width: 200px;
+		padding-top: 10px;
+		display: inline-block;
+	}
+</style>
+<!-- 18 Feb End-->
+<div class="container",class="form-group">
+        <h2>Details : </h2>
+    <h2>Welcome</h2>
+    <h3>Enter the Following parameters :</h3>
+  <form action="/result" method="POST">
+		<label for="age">Age: </label>
+    <input type="text" id="age" name="age" placeholder="E.g: 40">
+    <br>
+
+    <label for="bp">Blood Pressure: </label>
+    <input type="text" id="bp" name="bp" placeholder="E.g: 80">
+    <br>
+
+		<label for="sg">Specific Gravity: </label>
+    <input type="text" id="sg" name="sg" placeholder="E.g: 1.025">
+    <br>
+
+    <label for="al">Albumin: </label>
+    <input type="text" id="al" name="al" placeholder="E.g: 0">
+    <br>
+
+		<label for="su">Sugar: </label>
+		<input type="text" id="su" name="su" placeholder="E.g: 0">
+		<br>
+
+		<label for="pc">Pus Cell: </label>
+		<input type="text" id="pc" name="pc" placeholder="E.g: 0">
+		<br>
+
+    <label for="pcc">Pus Cell Clumps: </label>
+    <input type="text" id="pcc" name="pcc" placeholder="E.g: 0">
+    <br>
+
+		<label for="ba">Bacteria: </label>
+		<input type="text" id="ba" name="ba" placeholder="E.g: 0">
+		<br>
+
+    <label for="bgr">Blood Glucose Random: </label>
+    <input type="text" id="bgr" name="bgr" placeholder="E.g: 140">
+    <br>
+
+    <label for="bu">Blood Urea: </label>
+    <input type="text" id="bu" name="bu" placeholder="E.g: 10">
+    <br>
+
+    <label for="sc">Serum Creatinine: </label>
+    <input type="text" id="sc" name="sc" placeholder="E.g: 1.2">
+    <br>
+
+    <label for="hemo">Hemoglobin: </label>
+    <input type="text" id="hemo" name="hemo" placeholder="E.g: 15">
+    <br>
+
+    <label for="pcv">Packed Cell Volume: </label>
+    <input type="text" id="pcv" name="pcv" placeholder="E.g: 48">
+    <br>
+
+    <label for="htn">Hypertension: </label>
+    <input type="text" id="htn" name="htn" placeholder="E.g: 0">
+    <br>
+
+    <label for="dm">Diabetes Mellitus: </label>
+    <input type="text" id="dm" name="dm" placeholder="E.g: 0">
+    <br>
+
+		<label for="cad">Coronary Artery Disease: </label>
+		<input type="text" id="cad" name="cad" placeholder="E.g: 0">
+		<br>
+
+    <label for="appet">Appetite: </label>
+    <input type="text" id="appet" name="appet" placeholder="E.g: 1">
+    <br>
+
+		<label for="pe">Pedal Edema: </label>
+		<input type="text" id="pe" name="pe" placeholder="E.g: 0">
+		<br>
+
+		<label for="ane">Anemia: </label>
+    <input type="text" id="ane" name="ane" placeholder="E.g: 0">
+    <br>
+    <br>
+    <input type="submit" value="Submit"><br><br>
+</form>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<footer id="main-footer">
+      Please note: These models are just predictions and can make prediction errors.
+    </footer>
+</body>
+</html>

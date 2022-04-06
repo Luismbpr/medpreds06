@@ -1,0 +1,300 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red128\green156\blue196;\red33\green34\blue36;\red0\green0\blue0;
+\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cscmyk\c40000\c20262\c3\c3;\cspthree\c17255\c17647\c18773;\cssrgb\c0\c0\c0;
+\csgray\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 git & GitHub Tutorial\
+\
+Activate Environment\
+\
+$ cd ~\
+$ source start_miniforge.sh\
+$ cd '/Users/luis/Documents/Pythonn Projects/Venvironment_tests/venvironment_test02_d'\
+$ conda activate 'venvironment_test02_d'\
+\
+# Go to folder where local repository will be created\
+$ cd '/Users/luis/Documents/Pythonn Projects/Venvironment_tests/venvironment_test02_d/medpreds07/'\
+\
+$ git init\
+$ git lfs install\
+\
+$ git clone theHTTPSlinkfromGithub\
+# For HTTPS: https://github.com/Luismbpr/medpreds06.git\
+# For SSH: git@github.com:Luismbpr/medpreds06.git\
+\
+$ \
+\
+\
+# This gives the history of commits\
+$ git log\
+\
+# Add all the files you want\
+# A) Add all the files\
+$ git add .\
+\
+# B) Add a specific file\
+$ git add \'91README.md\'92\
+\
+# Commit the files you want to upload to the repository\
+$ git commit -m \'91Explanation to show\'92\
+\
+# Before making the push check if the git has been connected to the account\
+# git config \'97global user.name\
+\
+# Before making the push check if the git has been connected to the email\
+$ git config --global user.email\
+\
+# Push the files\
+$ git push origin master\
+\
+# To see which files in the system in the project have been changed\
+$ git status\
+$ git log\
+\
+# To upload your own work\
+$ git add <Files or Directory>\
+\
+# To add all the files use dot \
+$ git add .\
+\
+$ git commit -m \'93<details>\'94\
+$\
+$\
+\
+\
+# \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+How to upload your existing project to GitHub in 5 minutes [2021]\
+https://www.youtube.com/watch?v=bknDV-hcoog&list=PLvk0vTb0H4GcGP8pJozr6AeqzlO3GPJH-&index=2\
+By TechPedia - How to Tech\
+\
+\
+# Initialize a local repository in the project folder\
+\
+# Go to the project folder\
+$ cd \'91/Users/luis/Documents/Pythonn Projects/Venvironment_tests/venvironment_test02_d/medpreds07\'92\
+\
+# Initialize the local repository in the project folder\
+$ git init\
+\
+# Show all the untracked files on the folder\
+$ git status\
+\
+# Add a git ignore file for all large files and the files you do not want\
+# Add which files you would like to ignore when pushing changes\
+# Example: ignore all the zip files\
+$ *.zip\
+\
+# To enable tracking to all of these files\
+$ git add .\
+\
+# To commit these changes in the local repository use commit\
+$ git commit -m \'93description\'94\
+\
+# The local repository is up to date\
+\
+# Now connect it to the local repository with the remote repository\
+$ git remote add origin https://github.com/DDDD/database-test.git\
+\
+# Upload all the local files to the remote repository\
+$ git push -u origin master\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+How to Upload Large Files to GitHub | Git LFS [2022]\
+\
+https://www.youtube.com/watch?v=8Qe4HTlP6mI\
+\
+By TechPedia.- How to Tech\
+\
+# Install git lfs\
+$ bre install git-lfs\
+\
+# Go to the folder where you have your project (your local repository\
+$ git lfs install\
+\
+# track the files you want using git lfs\
+# Example: track the zip files\
+$ git lfs track "*.zip"\
+\
+# Run this\
+$ git add .gitattributes\
+\
+# Commit and push your changes like you would normally do\
+\
+# To add all the files\
+$ git add .\
+\
+# To add a specific file\
+$ git add \'93file\'94\
+\
+# Commit the changes\
+$ git commit -m \'93large file\'94\
+\
+# Push\
+$ git push origin master\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+How to set up SSH for Github on Mac [2022]\
+\
+https://www.youtube.com/watch?v=nZYJKXXMvkM&list=PLvk0vTb0H4GcGP8pJozr6AeqzlO3GPJH-&index=4\
+\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+# Clone the SSH repository\
+$ git clone url of the repository\
+# It will be denied because the SSH keys need to be updated or set up\
+\
+# set up the SSH keys\
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent\
+\
+Go to settings on GitHub/Go to SSH and GPG Keys/Generating ssh keys\
+\
+Click on: Generating a new SSH key and adding it to the ssh-agent\
+Run this command in the terminal\
+$ ssh-keygen -t ed25519 -C "your_email@example.com"\
+$ ssh-keygen -t ed25519 -C "marbac2000@hotmail.com"\
+\
+\
+# Note: If you are using a legacy system that doesn\'92t support the ED25519 algorithm, use:\
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"\
+\
+\
+# Enter the file in which to save the key\
+Overwrite if you want\
+# enter a passphrase\
+# The key will be generated and saved in a location showed\
+\
+# ------------------------------------------------------------------------------------------------\
+# Note: I did not use any passphrase\
+Your identification has been saved in /Users/luis/.ssh/id_ed25519\
+Your public key has been saved in /Users/luis/.ssh/id_ed25519.pub\
+The key fingerprint is:\
+SHA256:dukR51zzQrFaw4RHud+HvkLxFylcvKjstYcuRInU6gc marbac2000@hotmail.com\
+The key's randomart image is:\
++--[ED25519 256]--+\
+|          .  o=. |\
+|         . ..oo= |\
+|        . + +.@.o|\
+|         E O.O.B |\
+|        S B =ooo+|\
+|       . + *..o.=|\
+|          =...o..|\
+|           o.o.. |\
+|            ooo. |\
++----[SHA256]-----+\
+# ------------------------------------------------------------------------------------------------\
+\
+\
+# Next Step\
+# Adding the SSH key to the SSH-Agent\
+# Start the ssh-agent in the background\
+$ eval "$(ssh-agent -s)"\
+\
+# Result:Agent pid 6295\
+# Result: 
+\f1\fs22 \cf2 \cb3 \CocoaLigature0 Agent pid 6907
+\f0\fs24 \cf0 \cb1 \CocoaLigature1 \
+\
+# Then modify the config file, which is located at this location: ~/.ssh/config\
+$ open ~/.ssh/config -  On Mac you can use the nano command\
+$ nano ~/.ssh/config\
+\
+# Copy this text and paste it inside\
+Host *\
+ AddKeysToAgent yes\
+ UseKeychain yes\
+ IdentityFile ~/.ssh/id_rsa\
+\
+Save the file in Nano by using: Ctrl + X\
+The type: Y\
+# click enter\
+\
+\
+Note: If you see an error like this\
+/Users/USER/.ssh/config: line 16: Bad configuration option: usekeychain\
+add an additional config line to your Host * section:\
+Host *\
+  IgnoreUnknown UseKeychain\
+\
+\
+Add your SSH private key to the ssh-agent and store your passphrase in the keychain. If you created your key with a different name, or if you are adding an existing key that has a different name, replace id_ed25519 in the command with the name of your private key file.\
+\
+$ ssh-add -K ~/.ssh/id_ed25519\
+\
+\
+\
+# Next Step: Add the SSH key to your account on GitHub.\
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account\
+\
+Copy the SSH public key to your clipboard.\
+$ pbcopy < ~/.ssh/id_ed25519.pub\
+# Copies the contents of the id_ed25519.pub file to your clipboard\
+\
+In the upper-right corner of any page, click your profile photo, then click Settings.\
+In the "Access" section of the sidebar, click SSH and GPG keys.\
+Click New SSH key or Add SSH key.\
+In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal Mac, you might call this key "Personal MacBook Air".\
+Paste your key into the "Key" field.\
+Click Add SSH key.\
+If prompted, confirm your GitHub password.\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+04 04-April 2022\
+The following SSH key was added to your account:\
+\
+Mac_M1_01\
+SHA256:dukR51zzQrFaw4RHud+HvkLxFylcvKjstYcuRInU6gc\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs22 \cf4 \cb5 \CocoaLigature0 $ cd ~\
+$ source start_miniforge.sh\
+$ cd '/Users/luis/Documents/Pythonn Projects/Venvironment_tests/venvironment_test02_d'\
+$ conda activate 'venvironment_test02_d'\
+$ cd '/Users/luis/Documents/Pythonn Projects/Venvironment_tests/venvironment_test02_d/medpreds07/'\
+\
+$ git clone git@github.com:Luismbpr/medpreds06.git\
+\
+$ git remote add origin git@github.com:Luismbpr/medpreds06.git\
+\
+$ git remote -v\
+\
+$ git lfs install\
+\
+$ pwd\
+\
+$ git lfs track "/Users/luis/Documents/Pythonn Projects/Venvironment_tests/venvironment_test02_d/medpreds07/my_model_25Mar.h5"\
+\
+$ git add my_model_25Mar.h5\
+$ git commit -m "adding my_modelh5_file"\
+$ git push origin master\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \CocoaLigature1 \
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\
+\
+\
+}

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+	<title>About</title>
+</head>
+<style>
+	 #main-footer
+    {
+      color: #FFFFFF;
+      font-family: "Segoe UI";
+      background: #2B2B2B;
+      text-align: center;
+      margin-top: 75px;
+      padding: 16px;
+      bottom: 8px;
+    }
+
+    .img_holder img{
+        max-width: 100%; max-height: 100%;
+    }
+
+    .btn-file {
+    position: relative;
+    overflow: hidden;
+    }
+    .btn-file input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+</style>
+<body>
+
+	<header class="site-header">
+  <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+    <div class="container">
+      <a class="navbar-brand mr-4" href="/">ML Medical Prediction App</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <div class="navbar-nav mr-auto">
+					<a class="nav-item nav-link" href="/">Home</a>
+					<a class="nav-item nav-link" href="/about">About</a>
+					<a class="nav-item nav-link" href="/cancer">Cancer</a>
+					<a class="nav-item nav-link" href="/diabetes">Diabetes</a>
+					<a class="nav-item nav-link" href="/heart">Heart</a>
+					<a class="nav-item nav-link" href="/liver">Liver</a>
+					<a class="nav-item nav-link" href="/kidney">Kidney</a>
+					<a class="nav-item nav-link" href="/Malaria">Malaria</a>
+					<a class="nav-item nav-link" href="/Pneumonia">Pneumonia</a>
+        </div>
+        <!-- Navbar Right Side  This goes up <a class="nav-item nav-link" href="/Pneumonia">Pneumonia</a>
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/login">Login</a>
+          <a class="nav-item nav-link" href="/register">Register<
+      </div>-->
+    </div>
+  </nav>
+</header>
+
+	<div class="container">
+		<h1>Details: </h1>
+		<h3>ML Disease Prediction App</h3>
+    <h3>The app predicts whether a set of inputs corresponds to a disease or to a healthy user.</h3>
+		<p>The types of diseases on which this app can predict if the user is healthy or has the disease are the following:</p>
+		<br>
+    <h2>1. Breast Cancer </h2>
+    <p>Breast cancer is cancer that develops from breast tissue.<br></p>
+		<p>It's important to understand that most breast lumps are benign and not malignant.<br></p>
+
+    <h3>Breast Cancer Symptoms</h3>
+    <p>Signs and symptoms of breast cancer may include:</p>
+    <ul>
+      <li>A breast lump or thickening that feels different from the surrounding tissue</li>
+      <li>Change in the size, shape or appearance of the breast.
+      </li>
+    </ul>
+    <h3>Causes</h3>
+    <p>The causes of breast cancer are unknown. But there are many risk factors for these cancers.<br>
+The most common risk factors are lifestyle-related risk factors.
+<br>
+Although it is not fully understood, hormones also seem to play an important role in many cases of breast cancer.</p>
+<br>
+    <h3>More Information</h3>
+		<p>For more information on the dataset used visit: archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)</p><br>
+		<p>For more information about cancer please visit: cancer.net/</p><br>
+<br>
+<hr>
+<br>
+
+		<h2>2. Diabetes</h2>
+<p>Diabetes is a chronic health condition. If you have diabetes the body either doesn't make enough insulin or cannot use the insulin it makes as well as it should.</p>
+<p>If the body cannot process or the cells stop responding to insulin the blood sugar stays in the bloodstream.
+Over time this can cause serious health problems</p>
+<p>Over time, high blood glucose leads to problems such as heart disease, vision loss and kidney disease.</p>
+
+		<h3>Diabetes Symptoms </h3>
+		<p>Signs and symptoms of diabetes may include:</p>
+		<ul>
+			<li>Increased thirst and urination.</li>
+			<li>Increased hunger.</li>
+			<li>Fatigue.</li>
+			<li>Blurred vision.</li>
+			<li>Numbness or tingling in the feet or hands</li>
+			<li>Sores that do not heal</li>
+			<li>Unexplained weight loss</li>
+		</ul>
+
+		<h3>More Information</h3>
+		<p>For more information on the dataset used visit: niddk.nih.gov/health-information/diabetes/</p><br>
+		<p>For more information about cancer please visit: cdc.gov/diabetes/index</p><br>
+
+		<br>
+		<hr>
+		<br>
+
+<h2>3.Heart Disease</h2>
+<h3>Overview</h3>
+<p>Heart disease describes a range of conditions that affect the heart. Many of them are related to atherosclerosis.<br>
+  The term "heart disease" is often used interchangeably with the term "cardiovascular disease." </p>
+<p>Atherosclerosis is a condition that develops when plaque builds up on the walls fo the arteries. Narrowing the arteries and making it harder for the blood to flow.</p>
+<p>Cardiovascular disease generally refers to conditions that involve narrowed or blocked blood vessels that can lead to a heart attack, chest pain (angina) or stroke.</p>
+<p>This can cause a heart attack or a stroke.</p><br>
+
+<h3>Heart Disease Symptoms</h3>
+ <ul>
+  <li>Chest Discomfort.)</li>
+  <li>Discomfort in other areas of the upper body.</li>
+  <li>Shortness of breath.</li>
+  <li>Ther signs such as breaking out in a cold sweat, nausea or lighteadedness.</li>
+</ul>
+<br>
+<hr>
+<br>
+
+<h2>4.Liver Disease</h2>
+<p>The liver sits under the ribcage on the right side of the abdomen. It sepparates nutrients and waste. It also produces bile, which carries toxins out of the body.<br>
+There are many types of conditions that damage the liver can lead to liver failure.<br></p>
+
+<h3>Liver Disease Symptoms</h3>
+<p>Classic symptoms of liver disease include:</p>
+<ul>
+	<li>Yellowish skin and eyes (Also known as Jaundice).</li>
+	<li>Abdominal pain (especially on the right side) and swelling.</li>
+	<li>Swelling in the arms, legs and ankles (Also known as Edema).</li>
+	<li>Itchy skin.</li>
+	<li>Dark urine color.</li>
+	<li>Pale stool color.</li>
+	<li>Chronic fatigue.</li>
+	<li>Nausea or vomiting.</li>
+	<li>Loss of appetite</li>
+	<li>Tendency to bruise easily.</li>
+</ul>
+
+<br>
+<hr>
+<br>
+
+<h2>5.Kidney Disease</h2>
+<h3>Overview</h3>
+<p>The primary job of the kidneys is to filter waste and extra water out of the blood by making urine in order to keep the body working properly.<br>
+(CKD) Chronic Kidney Disease is a disease when the kidneys are damaged and cannot filter blood the way they should.
+The damage can cause wastes to build up in the body and cause other health problems.<br>
+</p>
+<p> If the kidneys fail the need for dialysis or a kidney transplant is needed to maintain health. </p>
+<br>
+<h3>Kidney Disease Symptoms</h3>
+<br>
+<ul>
+	<li>Chest pain.</li>
+	<li>Dry skin.</li>
+	<li>Ithcing or numbness.</li>
+	<li>Headaches.</li>
+	<li>Increased or decreased urination.</li>
+	<li>Loss of appetite.</li>
+	<li>Muscle cramps.</li>
+	<li>Nausea.</li>
+	<li>Shortness of breath.</li>
+	<li>Sleep problems.</li>
+	<li>Trouble concentrating.</li>
+	<li>Vomiting.</li>
+	<li>Weight loss.</li>
+	<li>Anemia.</li>
+	<li>Bone disease.</li>
+</ul>
+  <br>
+  <hr>
+  <br>
+
+<!--Malaria Start -->
+<h2>6. Malaria</h2>
+<h3>Overview</h3>
+<p>Malaria is a life-threatening mosquito-borne blood disease. The Anopheles mosquito transmits it to humans.</p><br>
+<p>The parasites in mosquitos that spread malaria belong to the Plasmodium genus. Over 100 types of Plasmodium parasite can infect a variety of species. Different types replicate at different rates, changing how quickly the symptoms escalate, and the severity of the disease.</p>
+<br>
+<h3>Malaria Symptoms</h3>
+<br>
+<ul>
+	<li>fever and chills</li>
+	<li>impaired consciousness</li>
+	<li>prostration, or adopting a prone position multiple convulsions</li>
+	<li>deep breathing and respiratory distress</li>
+	<li>abnormal bleeding and signs of anemia</li>
+	<li>clinical jaundice and evidence of vital organ dysfunction</li>
+</ul>
+<!--Malaria End -->
+	<br>
+	<hr>
+	<br>
+<!--Pneumonia Start -->
+<h2>7. Pneumonia</h2>
+<h3>Overview</h3>
+<p>Pneumonia is an infection in one or both lungs. It can be caused by bacteria, viruses, or fungi. Bacterial pneumonia is the most common type in adults. Pneumonia causes inflammation in the air sacs in your lungs, which are called alveoli.</p>
+<br>
+<h3>Pneumonia Symptoms</h3>
+<p>Common symptoms include:</p>
+<br>
+<ul>
+	<li>Cough</li>
+	<li>Rusty or green phlegm, or sputum, coughed up from lungs fever</li>
+	<li>Fast breathing and shortness of breath</li>
+	<li>Shaking chills</li>
+	<li>Chest pain that usually worsens when taking a deep breath, known as pleuritic pain</li>
+	<li>Fast heartbeat</li>
+	<li>Fatigue and weakness</li>
+	<li>Nausea and vomiting</li>
+	<li>Diarrhea</li>
+	<li>Sweating</li>
+	<li>Headache</li>
+	<li>Muscle pain</li>
+	<li>Confusion or delirium, especially in older adults</li>
+	<li>Dusky or purplish skin color, or cyanosis, from poorly oxygenated blood</li>
+</ul>
+<!--Pneumonia End -->
+	<br>
+	<hr>
+	<br>
+
+<hr>
+
+
+	</div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<footer id="main-footer">
+      Please note: These models are just predictions and can make prediction errors.
+    </footer>
+</body>
+</html>
