@@ -267,7 +267,7 @@ def result():
     return(render_template("result.html", prediction=prediction))"""
 
 #cancer ==30 ,Diabetes == 8, Heart == 13, kidney == 19, liver == 10,
-
+"""
 def ValuePredictor(to_predict_list, size):
     to_predict = np.array(to_predict_list).reshape(1,size)
     if(size==30):#Cancer - 30
@@ -317,7 +317,7 @@ def result():
     else:
         prediction='Healthy user'
     return(render_template("result.html", prediction=prediction))
-
+"""
 
 if __name__ == "__main__":
     app.run(debug=True)
