@@ -68,7 +68,6 @@ def api(full_path):
     #with graph.as_default():
     predicted = model.predict(data)
     return predicted
-
 #FOR THE SECOND MODEL
 def api1(full_path):
     data = image.load_img(full_path, target_size=(64, 64, 3))
@@ -86,7 +85,7 @@ def api1(full_path):
  #  return render_template('index.html')
 
 
-# procesing uploaded file and predict it
+# processing uploaded file and making the prediction
 @app.route('/upload', methods=['POST','GET'])
 def upload_file():
 
