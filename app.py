@@ -1,8 +1,12 @@
 #Important Modules
+<<<<<<< HEAD
 
 #------------------------------------------------------- Workaround to see if it works
 
 #-------------------------------------------------------
+=======
+import urllib.parse
+>>>>>>> 49f8d661a7637664b4b946d34a129b3cec09db22
 import numpy as np
 from flask import Flask, render_template, url_for, flash, redirect
 from flask import request
