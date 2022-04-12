@@ -6,3 +6,5 @@ requirements_to_differentiate/
 runtimeold.txt
 Errors
 App_py
+Notebooks_NotToDeploy
+Models_NotToDeploy
