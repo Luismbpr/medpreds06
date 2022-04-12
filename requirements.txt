@@ -15,4 +15,7 @@ Tensorflow-cpu==2.8.0
 #tensorflow-deps==2.8.0
 #tensorflow-macos==2.8.0
 #tensorflow-metal==0.4.0
-werkzeug==2.0.3
+# Deployment02_DLworked
+#werkzeug==2.0.3
+# Deployment02_seeifitworks
+werkzeug==0.16.1
