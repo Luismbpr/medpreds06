@@ -85,7 +85,6 @@ def api1(full_path):
 #def home():
  #  return render_template('index.html')
 
-
 # processing uploaded file and making the prediction
 @app.route('/upload', methods=['POST','GET'])
 def upload_file():
@@ -229,42 +228,42 @@ def Pneumonia():
 
 
 """
-@app.route("/register", methods=["GET", "POST"])
-def register():
-    form =RegistrationForm()
-    if form.validate_on_submit():
-        #flash("Account created for {form.username.data}!".format("success"))
-        flash("Account created","success")
-        return redirect(url_for("home"))
-    return render_template("register.html", title ="Register",form=form )
-@app.route("/login", methods=["POST","GET"])
-def login():
-    form =LoginForm()
-    if form.validate_on_submit():
-        #if form.email.data =="sho" and form.password.data=="password":
-        flash("You Have Logged in !","success")
-        return redirect(url_for("home"))
-    #else:
-    #   flash("Login Unsuccessful. Please check username and password","danger")
-    return render_template("login.html", title ="Login",form=form )
-def ValuePredictor1(to_predict_list):
-    to_predict = np.array(to_predict_list).reshape(1,30)
-    loaded_model = joblib.load("model")
-    result = loaded_model.predict(to_predict)
-    return result[0]
+#@app.route("/register", methods=["GET", "POST"])
+#def register():
+    #form =RegistrationForm()
+    #if form.validate_on_submit():
+#        #flash("Account created for {form.username.data}!".format("success"))
+        #flash("Account created","success")
+        #return redirect(url_for("home"))
+    #return render_template("register.html", title ="Register",form=form )
+#@app.route("/login", methods=["POST","GET"])
+#def login():
+    #form =LoginForm()
+    #if form.validate_on_submit():
+#        #if form.email.data =="sho" and form.password.data=="password":
+#        flash("You Have Logged in !","success")
+#        return redirect(url_for("home"))
+#    #else:
+    ##   flash("Login Unsuccessful. Please check username and password","danger")
+#    return render_template("login.html", title ="Login",form=form )
+#def ValuePredictor1(to_predict_list):
+#    to_predict = np.array(to_predict_list).reshape(1,30)
+#    loaded_model = joblib.load("model")
+#    result = loaded_model.predict(to_predict)
+#    return result[0]
 
-@app.route('/result1',methods = ["GET","POST"])
-def result():
-    if request.method == 'POST':
-        to_predict_list = request.form.to_dict()
-        to_predict_list=list(to_predict_list.values())
-        to_predict_list = list(map(float, to_predict_list))
-        result = ValuePredictor(to_predict_list)
-        if int(result)==1:
-            prediction='cancer'
-        else:
-            prediction='Healthy'
-    return(render_template("result.html", prediction=prediction))"""
+#@app.route('/result1',methods = ["GET","POST"])
+#def result():
+    #if request.method == 'POST':
+        #to_predict_list = request.form.to_dict()
+        #to_predict_list=list(to_predict_list.values())
+        #to_predict_list = list(map(float, to_predict_list))
+        #result = ValuePredictor(to_predict_list)
+        #if int(result)==1:
+#            prediction='cancer'
+        #else:
+#            prediction='Healthy'
+#    return(render_template("result.html", prediction=prediction))"""
 
 #cancer ==30 ,Diabetes == 8, Heart == 13, kidney == 19, liver == 10,
 def ValuePredictor(to_predict_list, size):
@@ -318,4 +317,4 @@ def result():
     return(render_template("result.html", prediction=prediction))
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
