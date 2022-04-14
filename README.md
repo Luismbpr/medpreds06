@@ -239,5 +239,6 @@
 <li><p> This project was not endorsed by any company.</p></li>
 <li><p> Special gratitude to all the people who make the datasets and all the information available.</p></li>
 <li><p> The application and information displayed here is for educational purposes. The accuracy of the models varies and will make some prediction errors. This should not be taken as medical advice.</p></li>
+<li><p> medpreds06 DL Trained models with higher accuracy than medpreds05.</p></li>
 </ul>
 <hr>
